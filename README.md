@@ -475,6 +475,11 @@ values which are defined [here](https://github.com/grafana/helm-charts/tree/main
 | grafana.extraConfigmapMounts[5].name | string | `"coder-dashboard-prebuilds"` |  |
 | grafana.extraConfigmapMounts[5].optional | bool | `true` |  |
 | grafana.extraConfigmapMounts[5].readOnly | bool | `false` |  |
+| grafana.extraConfigmapMounts[6].configMap | string | `"coder-dashboard-agent-boundaries"` |  |
+| grafana.extraConfigmapMounts[6].mountPath | string | `"/var/lib/grafana/dashboards/coder/6"` |  |
+| grafana.extraConfigmapMounts[6].name | string | `"coder-dashboard-agent-boundaries"` |  |
+| grafana.extraConfigmapMounts[6].optional | bool | `true` |  |
+| grafana.extraConfigmapMounts[6].readOnly | bool | `false` |  |
 | grafana.fullnameOverride | string | `"grafana"` |  |
 | grafana.image.tag | string | `"10.4.19"` |  |
 | grafana.persistence.enabled | bool | `true` |  |

@@ -481,6 +481,11 @@ grafana:
       configMap: coder-dashboard-prebuilds
       readOnly: false
       optional: true
+    - name: coder-dashboard-agent-boundaries
+      mountPath: /var/lib/grafana/dashboards/coder/6
+      configMap: coder-dashboard-agent-boundaries
+      readOnly: false
+      optional: true
 
 prometheus:
   enabled: true
