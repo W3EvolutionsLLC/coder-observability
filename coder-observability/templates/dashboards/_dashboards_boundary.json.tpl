@@ -520,12 +520,6 @@
       "title": "Most recent allowed requests",
       "transformations": [
         {
-          "id": "limit",
-          "options": {
-            "limitField": "10"
-          }
-        },
-        {
           "id": "extractFields",
           "options": {
             "delimiter": "|",
@@ -568,6 +562,24 @@
               "time": "Time",
               "workspace_name": "Workspace Name"
             }
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "Time"
+              }
+            ]
+          }
+        },
+        {
+          "id": "limit",
+          "options": {
+            "limitField": "10"
           }
         }
       ],
@@ -705,12 +717,6 @@
       "title": "Most recent denied requests",
       "transformations": [
         {
-          "id": "limit",
-          "options": {
-            "limitField": "10"
-          }
-        },
-        {
           "id": "extractFields",
           "options": {
             "delimiter": "|",
@@ -753,6 +759,24 @@
               "time": "Time",
               "workspace_name": "Workspace Name"
             }
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "Time"
+              }
+            ]
+          }
+        },
+        {
+          "id": "limit",
+          "options": {
+            "limitField": "10"
           }
         }
       ],
